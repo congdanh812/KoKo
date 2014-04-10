@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.avatar.koko_avt"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/img2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="stateHidden"  >
+        <activity
+            android:name="com.avatar.koko_avt.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.avatar.koko_avt.HomeActivity"
+            android:label="@string/home_activity" >
+        </activity>
+        <activity
+            android:name="com.avatar.koko_avt.VideoDocActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:label="@string/title_activity_video_doc" >
+        </activity>
+        <activity
+            android:name="com.avatar.koko_avt.Main2Activity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:label="@string/title_activity_main2" >
+        </activity>
+        <activity
+            android:name="com.avatar.koko_avt.FullScreenActivity"
+            android:label="@string/title_activity_full_screen" >
+        </activity>
+        <activity
+            android:name="com.avatar.koko_avt.VideoLiveActivity"
+            android:label="@string/title_activity_video_live" >
+        </activity>
+    </application>
+
+</manifest>
